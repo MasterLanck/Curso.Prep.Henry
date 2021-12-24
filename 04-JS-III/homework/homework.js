@@ -3,19 +3,27 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  
+return array[0];
 }
-
+ 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+return array[array.length-1]; 
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+return array.length;
+ 
+
 }
+
+
 
 
 function incrementarPorUno(array) {
@@ -23,6 +31,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+let resultado = []
+  for (let i=0; i<array.length; i++){
+  resultado.push(array[i]+1);
+
+  }
+return resultado; 
 }
 
 
@@ -30,7 +44,13 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+let nuevoArray = array
+nuevoArray.push (elemento);
+return nuevoArray;
+
 }
+
+
 
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -38,6 +58,11 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+let nuevoArray  = array
+nuevoArray.unshift(elemento);
+return nuevoArray;
+
+
 }
 
 
@@ -47,6 +72,17 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+let concatenada = ""  
+ for (let i = 0; i<palabras.length; i++){
+  concatenada += palabras[i];
+  if (i < palabras.length -1);
+  concatenada += " ";
+
+  }
+
+return concatenada;
+
+
 }
 
 
